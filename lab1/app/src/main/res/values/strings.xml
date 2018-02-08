@@ -7,4 +7,12 @@
     <string name="t4">Write here...</string>
 
     <string name="buttonText">Click here!</string>
+
+    <string name="b1">Go to A2</string>
+    <string name="b2">Go to A3</string>
+    <string name="b3">Go to A2</string>
+
+    <string name="t2_start">Hello </string>
+    <string name="t3_start">From A3: </string>
+
 </resources>

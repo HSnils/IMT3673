@@ -15,27 +15,28 @@
         android:layout_marginStart="108dp"
         android:layout_marginTop="50dp"
         android:onClick="onClickButtonA1"
-        android:text="@string/buttonText"
+        android:text="@string/b1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+        app:layout_constraintTop_toBottomOf="@+id/L1" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/S1"
         android:layout_width="210dp"
         android:layout_height="37dp"
         android:layout_marginBottom="18dp"
         android:layout_marginEnd="85dp"
         android:layout_marginStart="89dp"
         android:layout_marginTop="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintBottom_toTopOf="@+id/L1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/T1" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/T1"
         android:layout_width="215dp"
         android:layout_height="46dp"
         android:layout_marginBottom="18dp"
@@ -44,14 +45,14 @@
         android:layout_marginTop="75dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintBottom_toTopOf="@+id/S1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/t1" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/L1"
         android:layout_width="210dp"
         android:layout_height="35dp"
         android:layout_marginBottom="24dp"
@@ -61,5 +62,5 @@
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintTop_toBottomOf="@+id/S1" />
 </android.support.constraint.ConstraintLayout>

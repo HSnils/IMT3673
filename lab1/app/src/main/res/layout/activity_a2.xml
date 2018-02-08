@@ -7,7 +7,7 @@
     tools:context="com.ntnu.henrik.lab1.A2">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/T2"
         android:layout_width="112dp"
         android:layout_height="44dp"
         android:layout_marginBottom="32dp"
@@ -15,13 +15,13 @@
         android:layout_marginStart="136dp"
         android:layout_marginTop="93dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/T3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/T3"
         android:layout_width="112dp"
         android:layout_height="44dp"
         android:layout_marginBottom="149dp"
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/T2" />
 
     <Button
         android:id="@+id/button2"
@@ -42,9 +42,10 @@
         android:layout_marginEnd="124dp"
         android:layout_marginStart="124dp"
         android:layout_marginTop="149dp"
-        android:text="@string/buttonText"
+        android:onClick="onClickButtonA2"
+        android:text="@string/b2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/T3" />
 </android.support.constraint.ConstraintLayout>

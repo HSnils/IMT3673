@@ -7,7 +7,7 @@
     tools:context="com.ntnu.henrik.lab1.A3">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/T4"
         android:layout_width="wrap_content"
         android:layout_height="46dp"
         android:layout_marginBottom="59dp"
@@ -16,11 +16,11 @@
         android:layout_marginTop="77dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/t4" />
 
     <Button
         android:id="@+id/button3"
@@ -30,9 +30,10 @@
         android:layout_marginEnd="111dp"
         android:layout_marginStart="112dp"
         android:layout_marginTop="89dp"
-        android:text="@string/buttonText"
+        android:onClick="onClickButtonA3"
+        android:text="@string/b3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/T4" />
 </android.support.constraint.ConstraintLayout>

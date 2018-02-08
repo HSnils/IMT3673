@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".A1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,19 +17,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".A2"
-        android:parentActivityName=".A1">
+
+        <activity android:name=".A2" android:parentActivityName=".A1">
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".A1" />
         </activity>
+
         <activity android:name=".A3" android:parentActivityName=".A2">
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".A2" />
         </activity>
+
     </application>
 
 </manifest>
