@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Lab1</string>
+
+    <string name="t1">T1</string>
+    <string name="t2">T2</string>
+    <string name="t3">T3</string>
+    <string name="t4">T4</string>
+
+    <string name="buttonText">Click here!</string>
 </resources>
