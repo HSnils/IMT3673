@@ -32,6 +32,8 @@
                 android:value=".A2" />
         </activity>
 
+        <activity android:name=".A1$SpinnerActivity" />
+
     </application>
 
 </manifest>

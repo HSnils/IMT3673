@@ -15,4 +15,10 @@
     <string name="t2_start">Hello </string>
     <string name="t3_start">From A3: </string>
 
+    <string-array name="L1_array">
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+    </string-array>
+
 </resources>
