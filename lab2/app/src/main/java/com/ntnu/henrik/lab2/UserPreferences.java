@@ -54,4 +54,10 @@ public class UserPreferences extends AppCompatActivity {
         //starts ListView
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed()
+    {
+        startActivity(new Intent(UserPreferences.this, RSSview.class));
+    }
 }
