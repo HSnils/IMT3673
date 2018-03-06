@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">lab2</string>
+
+    <string-array name="displayNumber_array">
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="frequencyList_array">
+        <item>10 min</item>
+        <item>60 min</item>
+        <item>1 day</item>
+    </string-array>
 </resources>
