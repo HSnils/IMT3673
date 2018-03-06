@@ -39,4 +39,10 @@ public class A2 extends AppCompatActivity {
         TextView textView = findViewById(R.id.T3);
         textView.setText("From A3: " + message);
     }
+
+    @Override
+    public void onBackPressed()
+    {
+        startActivity(new Intent(A2.this, A1.class));
+    }
 }

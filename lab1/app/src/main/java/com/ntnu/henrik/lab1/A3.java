@@ -33,4 +33,10 @@ public class A3 extends AppCompatActivity {
 
         finish();
     }
+
+    @Override
+    public void onBackPressed()
+    {
+        startActivity(new Intent(A3.this, A2.class));
+    }
 }
