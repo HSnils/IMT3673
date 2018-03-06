@@ -191,4 +191,11 @@ public class RSSview extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        finish();
+        moveTaskToBack(true);
+    }
+
 }
