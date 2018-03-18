@@ -169,8 +169,10 @@ public class UserPreferences extends AppCompatActivity {
         saveUserSelectedURL();
         Intent updateIntent = getIntent();
         setResult(RESULT_OK, updateIntent);
+
         //creates intent
         Intent intent = new Intent(this, RSSview.class);
+
         //starts ListView
         startActivity(intent);
     }

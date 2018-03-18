@@ -129,7 +129,7 @@ public class RSSview extends AppCompatActivity {
         protected void onPreExecute() {
             super.onPreExecute();
 
-            progressDialog.setMessage("Busy loading rss feed...please wait...");
+            progressDialog.setMessage("Loader RSS-feed, vent litt...");
             progressDialog.show();
         }
 
@@ -172,7 +172,7 @@ public class RSSview extends AppCompatActivity {
 			         * and take into consideration only the "<title>" tag which is a child of the "<item>" tag
 			         *
 			         * In order to achieve this, we will make use of a boolean variable called "insideItem".
-			         */
+                 */
                 boolean insideItem = false;
 
                 // Returns the type of current event: START_TAG, END_TAG, START_DOCUMENT, END_DOCUMENT etc..
