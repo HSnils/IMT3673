@@ -17,6 +17,7 @@ public class UserPreferences extends AppCompatActivity {
     EditText editText;
     public static final String NUMBERofITEMS_PREF = "number_pref";
     public static final String FREQUENCY_PREF = "frequency_pref";
+    public static final String URL_PREF = "url_pref";
 
 
     @Override
@@ -25,6 +26,8 @@ public class UserPreferences extends AppCompatActivity {
         setContentView(R.layout.activity_user_preferences);
 
         editText = findViewById(R.id.editText);
+
+       // editText.setText(URL_PREF);
 
         //creates and fills teh dropdowns
         numberOfItemsDropdown();
@@ -152,15 +155,15 @@ public class UserPreferences extends AppCompatActivity {
 
     public void saveUserSelectedURL(){
         String RSSInputValue = editText.getText().toString();
-        SharedPreferences prefs = this.getSharedPreferences("RSSPrefs", MODE_PRIVATE);
+        SharedPreferences prefs = this.getSharedPreferences("url_pref", MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
-        editor.putString("PrefsForRSS", String.valueOf(RSSInputValue));
+        editor.putString(URL_PREF, String.valueOf(RSSInputValue));
         editor.apply();
     }
 
     static public String getSelectedRSSFeed(Context context){
-        SharedPreferences prefs = context.getSharedPreferences("RSSPrefs", MODE_PRIVATE);
-        return prefs.getString("PrefsForRSS", "https://www.nasa.gov/rss/dyn/breaking_news.rss");
+        SharedPreferences prefs = context.getSharedPreferences("url_pref", MODE_PRIVATE);
+        return prefs.getString(URL_PREF, "https://www.nasa.gov/rss/dyn/breaking_news.rss");
     }
 
     //onclick function on button Update to go to ListView
