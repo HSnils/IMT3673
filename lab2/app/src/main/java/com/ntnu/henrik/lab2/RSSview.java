@@ -43,12 +43,12 @@ public class RSSview extends AppCompatActivity {
 
         final int userNumberOfItems = UserPreferences.getNumberOfItems(this);
         final int refresh = UserPreferences.getRefreshTime(this);
-        String urlFromPrefrences = UserPreferences.getSelectedRSSFeed(this);
+        String urlFromPreferences = UserPreferences.getSelectedRSSFeed(this);
 
         //Values
         numberOfItems = userNumberOfItems;
         refreshTimer = refresh * 60000;
-        Url = urlFromPrefrences;
+        Url = urlFromPreferences;
 
         lvRss = findViewById(R.id.RSSfeed);
 
