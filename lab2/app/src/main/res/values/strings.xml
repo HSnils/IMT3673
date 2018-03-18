@@ -9,8 +9,8 @@
     </string-array>
 
     <string-array name="frequencyList_array">
-        <item>10 min</item>
-        <item>60 min</item>
-        <item>1 day</item>
+        <item>10</item>
+        <item>60</item>
+        <item>1440</item>
     </string-array>
 </resources>

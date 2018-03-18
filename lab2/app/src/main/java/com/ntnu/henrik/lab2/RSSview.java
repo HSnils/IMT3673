@@ -1,12 +1,12 @@
 package com.ntnu.henrik.lab2;
 
+
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.preference.PreferenceManager;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,30 +30,51 @@ public class RSSview extends AppCompatActivity {
     ListView lvRss;
     ArrayList<String> titles;
     ArrayList<String> links;
-    int numberOfItems = 5;
+    int numberOfItems;
+    int refreshTimer;
+    String Url;
+    Handler h = new Handler();
+    Runnable runnable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rssview);
 
-        lvRss = (ListView) findViewById(R.id.RSSfeed);
+        final int userNumberOfItems = UserPreferences.getNumberOfItems(this);
+        final int refresh = UserPreferences.getRefreshTime(this);
+        String urlFromPrefrences = UserPreferences.getSelectedRSSFeed(this);
+
+        //Values
+        numberOfItems = userNumberOfItems;
+        refreshTimer = refresh * 60000;
+        Url = urlFromPrefrences;
+
+        lvRss = findViewById(R.id.RSSfeed);
 
         titles = new ArrayList<String>();
         links = new ArrayList<String>();
 
-        lvRss.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                Uri uri = Uri.parse(links.get(position));
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-
-            }
-        });
 
         new ProcessInBackground().execute();
+
+        // Goes to article on user click
+        lvRss.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                //stores what link user clicks on
+                Uri uri = Uri.parse(links.get(i));
+
+                //Turns uri into String
+                String stringUri = uri.toString();
+
+                //starts new intent and passes url as a String
+                Intent intent = new Intent(RSSview.this, ArticleContent.class);
+                intent.putExtra("WORD",stringUri);
+                startActivity(intent);
+            }
+        });
     }
 
     public InputStream getInputStream(URL url)
@@ -70,8 +91,36 @@ public class RSSview extends AppCompatActivity {
         }
     }
 
-    //@SuppressLint("StaticFieldLeak")
+    @Override
+    protected void onResume() {
+        //when activity becomes visible
+
+
+        h.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Henter RSS innhold på nytt.");
+                new ProcessInBackground().execute();
+
+                runnable = this;
+                h.postDelayed(runnable, refreshTimer);
+            }
+        }, refreshTimer);
+
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause(){
+        //stops handler activity when not showing
+        h.removeCallbacks(runnable);
+        super.onPause();
+    }
+
+    //do this in the background
+    @SuppressLint("StaticFieldLeak")
     public class ProcessInBackground extends AsyncTask<Integer, Void, Exception> {
+
         ProgressDialog progressDialog = new ProgressDialog(RSSview.this);
 
         Exception exception = null;
@@ -85,17 +134,22 @@ public class RSSview extends AppCompatActivity {
         }
 
         @Override
-        protected Exception doInBackground(Integer... params) {
+        protected Exception doInBackground(Integer... integers) {
 
             try {
 
-                /*titles = new ArrayList<String>();
-                links = new ArrayList<String>();*/
+                titles = new ArrayList<String>();
+                links = new ArrayList<String>();
 
-                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(RSSview.this);
-                String rssUrl = preferences.getString("rssUrl", "http://feeds.news24.com/articles/fin24/tech/rss");
-                int maxItems = preferences.getInt ("maxItems", numberOfItems);
+                String rssUrl = Url;
+                int selectedNumberOfItems = numberOfItems;
                 URL url = new URL(rssUrl);
+
+
+                /*SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(RSSview.this);
+                String rssUrl = preferences.getString("rssUrl", "http://feeds.news24.com/articles/fin24/tech/rss");
+                int maxItems = preferences.getInt ("maxItems", numberOfItems)*/
+
 
                 //creates new instance of PullParserFactory that can be used to create XML pull parsers
                 XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
@@ -129,20 +183,29 @@ public class RSSview extends AppCompatActivity {
                     if (eventType == XmlPullParser.START_TAG) {
                         //if the tag is called "item"
                         if (xpp.getName().equalsIgnoreCase("item")) {
+
                             insideItem = true;
                         }
+
                         //if the tag is called "title"
                         else if (xpp.getName().equalsIgnoreCase("title")) {
                             if (insideItem) {
-                                // extract the text between <title> and </title>
-                                titles.add(xpp.nextText());
+
+                                if (titles.size() < selectedNumberOfItems) {
+                                    // extract the text between <title> and </title>
+                                    titles.add(xpp.nextText());
+                                }
+
                             }
                         }
                         //if the tag is called "link"
                         else if (xpp.getName().equalsIgnoreCase("link")) {
                             if (insideItem) {
-                                // extract the text between <link> and </link>
-                                links.add(xpp.nextText());
+
+                                if (links.size() < selectedNumberOfItems) {
+                                    // extract the text between <link> and </link>
+                                    links.add(xpp.nextText());
+                                }
                             }
                         }
                     }
@@ -154,12 +217,16 @@ public class RSSview extends AppCompatActivity {
                     eventType = xpp.next(); //move to next element
                 }
 
+            }
 
-            } catch (MalformedURLException e) {
+            //checks if something fails with url
+            catch (MalformedURLException e) {
                 exception = e;
-            } catch (XmlPullParserException e) {
+            }
+            catch (XmlPullParserException e) {
                 exception = e;
-            } catch (IOException e) {
+            }
+            catch (IOException e) {
                 exception = e;
             }
 
@@ -190,6 +257,8 @@ public class RSSview extends AppCompatActivity {
         //starts UserPreferences
         startActivity(intent);
     }
+
+
 
     @Override
     public void onBackPressed()
