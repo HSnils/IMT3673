@@ -7,6 +7,8 @@ Lab 1-4 in the course **IMT3673**
 * Spinner/Dropdown: https://developer.android.com/guide/topics/ui/controls/spinner.html
 
 ## Resourses used for lab 2:
+* Reading data from RSS: https://www.youtube.com/watch?v=Lnan_DJU7DI
+* RSS reader: https://www.youtube.com/watch?v=APInjVO0WkQ
 
 ## Resourses used for lab 3:
 
