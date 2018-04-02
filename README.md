@@ -1,5 +1,5 @@
 # IMT3673
-Lab 1-4 in the course **IMT3673**
+Lab 1-4 in the course **IMT3673 - Mobile/Wearable programming**
 
 ## Lab 1:
 Sending info between activites using intent and saving info using shared preferences.
