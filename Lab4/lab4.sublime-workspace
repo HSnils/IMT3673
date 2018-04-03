@@ -1,0 +1,712 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Boo",
+				"BookingsController"
+			],
+			[
+				"updated",
+				"updated_by"
+			],
+			[
+				"status",
+				"statusArray"
+			],
+			[
+				"Ad",
+				"AdminController"
+			],
+			[
+				"equ",
+				"equipment1"
+			],
+			[
+				"che",
+				"checkAvalibilityEquipment"
+			],
+			[
+				"eq",
+				"equipment1"
+			],
+			[
+				"sel",
+				"selectBox"
+			],
+			[
+				"roo",
+				"roomNumber"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"tra",
+				"target\tAttr"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"ack",
+				"background-color"
+			],
+			[
+				"flex-",
+				"flex-basis"
+			],
+			[
+				"space",
+				"space-around"
+			],
+			[
+				"all",
+				"allEquipments"
+			],
+			[
+				"flex",
+				"flex-basis"
+			],
+			[
+				"Co",
+				"Controller"
+			],
+			[
+				"Contr",
+				"Controllers"
+			],
+			[
+				"juist",
+				"justify-content"
+			],
+			[
+				"hi",
+				"highlight"
+			],
+			[
+				"hig",
+				"highlightedDoc"
+			],
+			[
+				"high",
+				"highlighting"
+			],
+			[
+				"doc",
+				"documentFileName"
+			],
+			[
+				"documen",
+				"documentID"
+			],
+			[
+				"html",
+				"htmlentities"
+			],
+			[
+				"htm",
+				"htmlentities"
+			],
+			[
+				"spa",
+				"space-around"
+			],
+			[
+				"just",
+				"justify-content"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"in",
+				"inline-flex"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"fl",
+				"flex"
+			],
+			[
+				"fle",
+				"flex-end"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"searc",
+				"searchItem"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"dc",
+				"document"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"bu",
+				"building"
+			],
+			[
+				"builing",
+				"buildingSelect"
+			],
+			[
+				"time",
+				"timeTo"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"booked",
+				"bookedFrom"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"delete",
+				"deletebutton"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"dis",
+				"displayEnd"
+			],
+			[
+				"jquer",
+				"jquery-ui"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"user",
+				"userID"
+			],
+			[
+				"edit",
+				"editForm"
+			],
+			[
+				"text",
+				"text-decoration"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 443.0,
+		"last_filter": "laravel artisan 5: make",
+		"selected_items":
+		[
+			[
+				"laravel artisan 5: make",
+				"Laravel Artisan 5: Make:Auth"
+			],
+			[
+				"laravel artisan 5: up",
+				"Laravel Artisan 5: Up"
+			],
+			[
+				"mater",
+				"Material Theme: Configuration"
+			],
+			[
+				"package controll ",
+				"Package Control: Install Package"
+			],
+			[
+				"pakcage",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package co",
+				"Package Control: List Packages"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"snippe",
+				"Snippet: html"
+			],
+			[
+				"pack",
+				"BracketHighlighter: Swap Brackets"
+			],
+			[
+				"laravel art: db",
+				"Laravel Artisan 5: DB:Seed"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"package control",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"gitgutter",
+				"GitGutter: Compare Against File Commit"
+			],
+			[
+				"pacage contr",
+				"Package Control: Install Package"
+			],
+			[
+				"package controll",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"package control:",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 538.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Henrik/Skole/Android/IMT3673/Lab4"
+	],
+	"file_history":
+	[
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/partials/navAdmin.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/partials/nav.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/User.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Controllers/Auth/RegisterController.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/auth/login.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/auth/register.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Controllers/AdminController.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Rooms.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/admin/index.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/admin/editUser.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Providers/AppServiceProvider.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Controllers/BookingsController.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/public/js/deleteAlert.js",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/admin/newBookingsTable.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Controllers/RoomsController.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/admin/newUsersTable.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/public/js/ajax.js",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/equipments/create.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/equipments/edit.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/admin/users.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/home/booking.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Guard.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/LoginAuthenticator.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/vendor/phar-io/manifest/src/values/AuthorCollection.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/home/test.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/partials/template.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Controllers/HomeController.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/bookings_room.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Equipments.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/bookings_equipment.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Bookings.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Controllers/ProfileController.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/seeds/DatabaseSeeder.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_14_151417_create_bookings_rooms_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_14_151319_create_bookings_equipments_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/rooms/edit.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/rooms/admin.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/home/index.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Controllers/Auth/LoginController.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/.gitignore",
+		"/D/Henrik/Skole/Android/IMT3673/README.md",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/rooms/create.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
+		"/C/Users/Henrik/Downloads/layout-mobile-whiteframe.ai",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/equipments/admin.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/partials/footer.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/profile/index.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/partials/errors.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Controllers/UsersController.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_02_112000_create_users_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/equipments/index.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/rooms/index.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/seeds/UserTableSeeder.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Controllers/EquipmentsController.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/seeds/RoomsTableSeeder.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/config/app.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/config/auth.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/partials/notifyFlash.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_02_113527_create_categories_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/seeds/BookingsTableSeeder.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Categories.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/routes/web.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/public/css/main.css",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_02_120840_create_bookings_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/seeds/CategoryTableSeeder.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/seeds/EquipmentsTableSeeder.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_02_114426_create_rooms_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_02_115440_create_equipments_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_02_121455_create_roles_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Roles.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_02_111455_create_roles_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_02_121440_create_equipments_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/database/migrations/2018_03_02_121426_create_rooms_table.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/.env",
+		"/C/Users/Henrik/Desktop/SHIIIIIIIIT/Test/index.html",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/partials/loading.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/partials/mdl-button.blade.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/README.md",
+		"/D/Programs/Xampp/htdocs/BachelorProj/resources/views/equipments/index.php",
+		"/D/Programs/Xampp/htdocs/BachelorProj/public/css/app.css",
+		"/D/Programs/Xampp/htdocs/oblig3/vendor/laravel/framework/src/Illuminate/Foundation/Application.php",
+		"/D/Programs/Xampp/htdocs/oblig3/routes/web.php",
+		"/C/Users/Henrik/AppData/Local/Temp/Rar$DIa0.848/material.css",
+		"/D/Programs/Xampp/htdocs/BachelorProj/app/Http/Controllers/Controller.php",
+		"/D/Programs/Xampp/htdocs/laratest/.env.example",
+		"/D/Programs/Xampp/htdocs/laratest/app/Http/Controllers/Auth/RegisterController.php",
+		"/D/Programs/Xampp/htdocs/laratest/app/User.php",
+		"/D/Programs/Xampp/htdocs/oblig3/.env",
+		"/D/Programs/Xampp/htdocs/laratest/public/index.php",
+		"/C/Users/Henrik/Downloads/csync (1).php",
+		"/D/Henrik/Documents/Phonegap projects/CamelClub Dagsplan/www/js/script.js",
+		"/D/Henrik/Documents/Phonegap projects/CamelClub Dagsplan/www/css/style.css",
+		"/D/Henrik/Documents/Phonegap projects/CamelClub Dagsplan/www/index.html",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/logout.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/setup.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/css/main.css",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/admin.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/.gitignore",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/editmeta.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/partials/nav.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/server/solr/safety/conf/managed-schema",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/README.md",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/edit_handler.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/upload_handler.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/search.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/partials/search_query.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/index.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/partials/search_test.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/partials/delete_handler.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/search.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/test.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/test.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/webproj3/documents/conf/managed-schema",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/classes.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/solr-6.6.1/webproj3/documents/documents.csv",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/partials/header.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/dblogon.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/classes/classes.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/css/login.css",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/connect.php",
+		"/D/Programs/Xampp/htdocs/ExperienceDesign/findroom.php",
+		"/D/Programs/Xampp/htdocs/ExperienceDesign/partials/header.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/pages/login.php",
+		"/D/Programs/Xampp/htdocs/Webprosjekt3/.git/info/exclude",
+		"/D/Programs/Xampp/htdocs/tinder/.gitignore"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 84.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 64.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "lab4.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"guard",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Contracts\\Auth\\Guard.php"
+			],
+			[
+				"authen",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesUsers.php"
+			],
+			[
+				"login",
+				"vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\Esmtp\\Auth\\LoginAuthenticator.php"
+			],
+			[
+				"authcp",
+				"vendor\\phar-io\\manifest\\src\\values\\AuthorCollection.php"
+			],
+			[
+				"authenticateu",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesUsers.php"
+			],
+			[
+				"auth",
+				"config\\auth.php"
+			],
+			[
+				"s",
+				"search.php"
+			],
+			[
+				"",
+				"findroom.php"
+			],
+			[
+				"a21820ca10357a8741a86f007eae30c0b1891211.php",
+				"storage\\framework\\views\\a21820ca10357a8741a86f007eae30c0b1891211.php"
+			],
+			[
+				"b969d01df046c7faac6e6fc3e149db7208feb49a.php",
+				"storage\\framework\\views\\b969d01df046c7faac6e6fc3e149db7208feb49a.php"
+			],
+			[
+				"setup",
+				"resources\\views\\setup.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Programs\\Xampp\\htdocs\\oblig3\\oblig3.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 373.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
