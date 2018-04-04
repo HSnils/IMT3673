@@ -3,12 +3,64 @@ body {
 	color: rgba(0,0,0,0.87);
 	font-family: Roboto, Helvetica, Arial, sans-serif;
 	margin: 0;
+	margin-top: 1em;
 	padding: 0;
 }
 
+.width100{
+	width: 100%;
+}
+
+.theMessage{
+	display: block;
+}
+
+.msg_sender_info{
+	margin-top: 1em;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.username_in_msg{
+	color: coral;
+
+}
+
+.username_in_msg.my_msg{
+	color: white;
+}
+
+.date_in_msg{
+
+}
+
+.order1{
+	order: 1;
+}
+
+.order2{
+	order: 2;
+}
+.msgField{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #6d6d6d;
+	padding: 1em 0 1em 0;
+	box-sizing: border-box;
+}
+
+.fillerHeight{
+	height: 3em;
+}
 
 @media(max-width: 600px){
 	body{
-		border-top: 16px solid #ffa100;
+
 	}
+}
+
+.no-margin-bottom{
+	margin-bottom: 0 !important;
 }

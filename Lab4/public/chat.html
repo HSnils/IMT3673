@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 4 - Chat application</title>
+
+	<!-- update the version number as needed -->
+	<script defer src="/__/firebase/4.12.1/firebase-app.js"></script>
+	<!-- include only the Firebase features as you need -->
+	<script defer src="/__/firebase/4.12.1/firebase-auth.js"></script>
+	<script defer src="/__/firebase/4.12.1/firebase-database.js"></script>
+	<script defer src="/__/firebase/4.12.1/firebase-messaging.js"></script>
+	<script defer src="/__/firebase/4.12.1/firebase-storage.js"></script>
+	<!-- initialize the SDK after all desired features are loaded -->
+	<script defer src="/__/firebase/init.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--Jquery and UI-->
+	<script src="jquery-ui/external/jquery/jquery.js"></script>
+	<link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="jquery-ui/jquery-ui.theme.min.css">
+	<script src="jquery-ui/jquery-ui.min.js"></script>
+	
+	<!--Materializecss -->
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<!---->
+	
+	<!--Fonts-->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+<body>
+	<div class="navbar-fixed">
+		<nav class="nav-extended"> 
+			<div class="nav-wrapper hide-on-small-only">
+				<a href="#" class="brand-logo">Chatchat</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li class="tab active"><a href="chat.html">Chat</a></li>
+					<li class="tab"><a href="friends.html">Friends</a></li>
+				</ul>
+			</div>
+			<div class="nav-content hide-on-med-and-up">
+				<ul class="tabs tabs-transparent">
+					<li class="tab active"><a href="chat.html">Chat</a></li>
+					<li class="tab"><a href="friends.html">Friends</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!--anothers msg -->
+	<div class="row">
+		<div class="col s12 m5">
+			<div class="card-panel ">
+				<span class="theMessage">I am a very simple card. I am good at containing small bits of information.
+				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+				</span>
+				<div class="width100 msg_sender_info">
+					<span class="username_in_msg">User1</span>
+					<span class="date_in_msg">4 Mars 2018 10:32</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--my msg -->
+	<div class="row">
+		<div class="col s12 m5 right">
+			<div class="card-panel teal">
+				<span class="theMessage white-text">I am a very simple card. I am good at containing small bits of information.
+				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+				</span>
+				<div class="width100 msg_sender_info">
+					<span class="username_in_msg order2">Me</span>
+					<span class="date_in_msg white-text order1">4 Mars 2018 10:32</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--anothers msg -->
+	<div class="row">
+		<div class="col s12 m5">
+			<div class="card-panel ">
+				<span class="theMessage">I am a very simple card. I am good at containing small bits of information.
+				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+				</span>
+				<div class="width100 msg_sender_info">
+					<span class="username_in_msg">User1</span>
+					<span class="date_in_msg">4 Mars 2018 10:32</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--anothers msg -->
+	<div class="row">
+		<div class="col s12 m5">
+			<div class="card-panel ">
+				<span class="theMessage">I am a very simple card. I am good at containing small bits of information.
+				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+				</span>
+				<div class="width100 msg_sender_info">
+					<span class="username_in_msg">User1</span>
+					<span class="date_in_msg">4 Mars 2018 10:32</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--anothers msg -->
+	<div class="row">
+		<div class="col s12 m5">
+			<div class="card-panel ">
+				<span class="theMessage">I am a very simple card. I am good at containing small bits of information.
+				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+				</span>
+				<div class="width100 msg_sender_info">
+					<span class="username_in_msg">User1</span>
+					<span class="date_in_msg">4 Mars 2018 10:32</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--anothers msg -->
+	<div class="row">
+		<div class="col s12 m5">
+			<div class="card-panel ">
+				<span class="theMessage">I am a very simple card. I am good at containing small bits of information.
+				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+				</span>
+				<div class="width100 msg_sender_info">
+					<span class="username_in_msg">User1</span>
+					<span class="date_in_msg">4 Mars 2018 10:32</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--filler-->
+	<div class="row fillerHeight">
+		<div class="col s12">
+		</div>
+	</div>
+	<!--MESSAGE FIELD-->
+	<div class="row msgField no-margin-bottom">
+		<div class="col s12 m12">
+			<form action="" class="col s12">
+				<div class="row no-margin-bottom">
+					<div class="col s9 m11">
+						<input placeholder="Write message here..." type="text" data-length="256" class="white-text">
+					</div>
+					<div class="col s3 m1 valign-wrapper ">
+						<button class="btn waves-effect waves-light center-align" type="submit" name="action" style="float:right;">
+							Send
+							<i class="material-icons right">send</i>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyAitH3JfKfegY-1l1EoMKB-bi3miDI8uaE",
+			authDomain: "lab4-ec08d.firebaseapp.com",
+			databaseURL: "https://lab4-ec08d.firebaseio.com",
+			projectId: "lab4-ec08d",
+			storageBucket: "lab4-ec08d.appspot.com",
+			messagingSenderId: "918362755977"
+		};
+		firebase.initializeApp(config);
+		console.log("Connected");
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+			// // The Firebase SDK is initialized and available here!
+			//
+			// firebase.auth().onAuthStateChanged(user => { });
+			// firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+			// firebase.messaging().requestPermission().then(() => { });
+			// firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+			//
+			// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+			try {
+			let app = firebase.app();
+			let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+			document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+			} catch (e) {
+			console.error(e);
+			document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+			}
+		});
+
+		$(document).ready(function() {
+			$('input#username, input#password').characterCounter();
+		});
+       
+	</script>
+	</body>
+</html>
