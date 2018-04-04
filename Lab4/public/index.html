@@ -33,7 +33,7 @@
 	<!---->
 	
 	<!--Fonts-->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
@@ -47,7 +47,7 @@
 				<div class="card-content white-text">
 					<span class="card-title">Sign in</span>
 					<div class="row">
-						<form class="col s12">
+						<form class="col s12" method="post" action="chat.html">
 							<div class="row">
 								<div class="col m3"></div>
 								<div class="input-field col s12 m6">
@@ -109,26 +109,6 @@
 	</script>
 
 	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-			// // The Firebase SDK is initialized and available here!
-			//
-			// firebase.auth().onAuthStateChanged(user => { });
-			// firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-			// firebase.messaging().requestPermission().then(() => { });
-			// firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-			//
-			// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-			try {
-			let app = firebase.app();
-			let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-			document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-			} catch (e) {
-			console.error(e);
-			document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-			}
-		});
 
 		$(document).ready(function() {
 			$('input#username, input#password').characterCounter();

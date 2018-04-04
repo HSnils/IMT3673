@@ -26,6 +26,10 @@ body {
 
 }
 
+.brand-logo{
+	margin-left: 0.5em;
+}
+
 .username_in_msg.my_msg{
 	color: white;
 }
