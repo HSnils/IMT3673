@@ -18,4 +18,4 @@ RSS2.0 Reader, with user preferences.
 Ball game using sensors to move the ball, and giving haptic/audio feedback when the ball collides with the edge.
 
 ## Lab 4:
-Chat application using Firebase. 
+Chat application using Firebase. Solved using web based technologies.
