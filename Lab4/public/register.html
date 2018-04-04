@@ -5,17 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lab 4 - Chat application</title>
 
-	<!-- update the version number as needed -->
+	<!--  update the version number as needed 
 	<script defer src="/__/firebase/4.12.1/firebase-app.js"></script>
-	<!-- include only the Firebase features as you need -->
+	 include only the Firebase features as you need 
 	<script defer src="/__/firebase/4.12.1/firebase-auth.js"></script>
 	<script defer src="/__/firebase/4.12.1/firebase-database.js"></script>
 	<script defer src="/__/firebase/4.12.1/firebase-messaging.js"></script>
 	<script defer src="/__/firebase/4.12.1/firebase-storage.js"></script>
-	<!-- initialize the SDK after all desired features are loaded -->
-	<script defer src="/__/firebase/init.js"></script>
+	< initialize the SDK after all desired features are loaded 
+	<script defer src="/__/firebase/init.js"></script> -->
 
-	<link rel="stylesheet" href="css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+
+	
 
 	<!--Jquery and UI-->
 	<script src="jquery-ui/external/jquery/jquery.js"></script>
@@ -33,9 +36,9 @@
 	<!---->
 	
 	<!--Fonts-->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -43,33 +46,23 @@
 		<div class="col s0 m4">
 		</div>
 		<div class="col s12 m4">
-			<div class="card blue-grey darken-1">
+			<div class="card blue-grey darken-4">
 				<div class="card-content white-text">
 					<span class="card-title">Sign up</span>
 					<div class="row">
-						<form class="col s12">
+						<form class="col s12" method="get" action="register.html">
 							<div class="row">
 								<div class="col m3"></div>
 								<div class="input-field col s12 m6">
-									<input id="username" type="text" class="validate" data-length="35">
+									<input id="username" type="text" class="validate white-text" data-length="35" title="Select username" maxlength="35">
 									<label for="username">Username</label>
-									<!--<span class="helper-text" data-error="wrong" data-success="right"></span>-->
 								</div>
 								<div class="col m3"></div>
 							</div>
 							<div class="row">
 								<div class="col m3"></div>
 								<div class="input-field col s12 m6">
-									<input id="password" type="password" class="validate" data-length="35">
-									<label for="password">Password</label>
-									<!--<span class="helper-text" data-error="wrong" data-success="right"></span>-->
-								</div>
-								<div class="col m3"></div>
-							</div>
-							<div class="row">
-								<div class="col m3"></div>
-								<div class="input-field col s12 m6">
-									<button class="btn waves-effect waves-light" type="submit" name="action" style="float:right;">
+									<button id="sign_up" class="btn waves-effect waves-light" type="button" name="action" style="float:right;">
 										Sign up
 										<i class="material-icons right">send</i>
 									</button>
@@ -80,7 +73,7 @@
 					</div>
 				</div>
 				<div class="card-action">
-					<a href="index.html">Back to sign in</a>
+					<a href="register.html">Sign up</a>
 				</div>
 			</div>
 		</div>
@@ -91,44 +84,10 @@
 		<div class="col s12 m6" id="load">
 		</div>
 	</div>
-
-
-	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	
+	<script type="text/javascript" src="scripts/initialize.js"></script>
+	<script type="text/javascript" src="scripts/register.js"></script>
 	<script>
-		// Initialize Firebase
-		var config = {
-			apiKey: "AIzaSyAitH3JfKfegY-1l1EoMKB-bi3miDI8uaE",
-			authDomain: "lab4-ec08d.firebaseapp.com",
-			databaseURL: "https://lab4-ec08d.firebaseio.com",
-			projectId: "lab4-ec08d",
-			storageBucket: "lab4-ec08d.appspot.com",
-			messagingSenderId: "918362755977"
-		};
-		firebase.initializeApp(config);
-		console.log("Connected");
-	</script>
-
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-			// // The Firebase SDK is initialized and available here!
-			//
-			// firebase.auth().onAuthStateChanged(user => { });
-			// firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-			// firebase.messaging().requestPermission().then(() => { });
-			// firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-			//
-			// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-			try {
-			let app = firebase.app();
-			let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-			document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-			} catch (e) {
-			console.error(e);
-			document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-			}
-		});
 
 		$(document).ready(function() {
 			$('input#username, input#password').characterCounter();

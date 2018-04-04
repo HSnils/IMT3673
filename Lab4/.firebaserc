@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "lab4-ec08d"
+    "default": "lab4-ec08d",
+    "lab4": "lab4-ec08d"
   }
 }
