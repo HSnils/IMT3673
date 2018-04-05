@@ -70,15 +70,16 @@ function addMessage(msg) {
 			$msg = snapshot.val();
 			addMessage($msg)
 			$('#loadingMessages').hide();
-			/*if(msg.date) {
-				var datetime = moment(msg.date);
-				var user = firebase.auth().currentUser;
-				var username = user.displayName;
-				var isafter = datetime.isAfter(now);
-				if(datetime.isAfter(now) && user.displayName != msg.username) {
+			
+			if($msg.date){
+				console.log("XD");
+				$datetime = moment($msg.date);
+				$user = firebase.auth().currentUser.displayName;
+				$isAfter = $datetime.isAfter(moment());
+				if($isAfter && ($user != $msg.username)) {
 					if(Notification.permission !== 'default') {
 						notify = new Notification('New Message', {
-						'body': 'Some one just posted a message in your message app',
+						'body': 'Someone just posted a message on Chatchat!',
 						'tag': '1234'
 						});
 						notify.onclick = function() {
@@ -88,7 +89,8 @@ function addMessage(msg) {
 						alert("Please click on request permission link before acessing this link!");
 					}
 				}
-			}*/
+			}
+			
 		});
 
 
@@ -105,3 +107,20 @@ function addMessage(msg) {
 	});
 
 }());
+
+// Asks premission to use notifications on click
+var dnperm = document.getElementById("dnperm");
+dnperm.addEventListener('click', function(e) {
+	e.preventDefault();
+	if(!window.Notification) {
+		alert("Notification is not supported!");
+	} else {
+		Notification.requestPermission().then(function(p) {
+			if(p === 'denied') {
+				alert("You denied to show notifications!");
+			} else {
+				alert("You accepted to get notifications!");
+			}
+		});
+	}
+});

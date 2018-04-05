@@ -81,7 +81,7 @@ How would you handle paging of messages when the total number of messages is rea
 * [x] When new message is typed and submitted it automatically shows up in the messages for the user nickname in the Friends list. 
 * [x] When the second app is installed (phone or emulator), the two participants can see each other messages, and they are shown in Friends List view. 
 * [x] The Friends List tab lists nicknames ONCE only (no duplications).
-* [ ] When the app is gone from foreground, and new message is posted by another user, within the predefined timeframe, the background service will post a Notification that shows up on the user phone. The notification can be used to open the app (or bring it back to the foreground).
+* [x] When the app is gone from foreground, and new message is posted by another user, within the predefined timeframe, the background service will post a Notification that shows up on the user phone. The notification can be used to open the app (or bring it back to the foreground).
 
 
 # Questions

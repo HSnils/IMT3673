@@ -19,3 +19,4 @@ Ball game using sensors to move the ball, and giving haptic/audio feedback when 
 
 ## Lab 4:
 Chat application using Firebase. Solved using web based technologies.
+Link to app: [HERE](https://lab4-ec08d.firebaseapp.com/)
