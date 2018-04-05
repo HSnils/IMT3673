@@ -78,9 +78,9 @@ How would you handle paging of messages when the total number of messages is rea
 * [x] The main screen of the app has two tabs with nice icons: Messages Feed, and Friends List. (Note: Everyone is everyone's friend and everyone follows everyone - one global chat room).
 * [x] The user can enter new message from the Feed tab. This can be achieved either inlined with the message list (the UI has the messages list and a TextEdit field with the button), or, through an Action Button that opens up a message editor/submit ability as separate from the List of messages. Discuss with the app author the choice they have made. 
 * [x] When new message is typed and submitted it automatically shows up in the message feed. (Note: self-messages are shown)
-* [ ] When new message is typed and submitted it automatically shows up in the messages for the user nickname in the Friends list. 
+* [x] When new message is typed and submitted it automatically shows up in the messages for the user nickname in the Friends list. 
 * [x] When the second app is installed (phone or emulator), the two participants can see each other messages, and they are shown in Friends List view. 
-* [ ] The Friends List tab lists nicknames ONCE only (no duplications).
+* [x] The Friends List tab lists nicknames ONCE only (no duplications).
 * [ ] When the app is gone from foreground, and new message is posted by another user, within the predefined timeframe, the background service will post a Notification that shows up on the user phone. The notification can be used to open the app (or bring it back to the foreground).
 
 

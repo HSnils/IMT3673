@@ -11,6 +11,10 @@ body {
 	width: 100%;
 }
 
+.flex100{
+	flex-basis: 100%;
+}
+
 nav{
 	background-color: #fdcb6e !important;
 }
@@ -86,9 +90,24 @@ nav{
 
 /* FRIENDS . html*/
 .usersMessages{
-	display: flex;
-	justify-content: center;
-	text-align: center;
+
+}
+
+.hidden{
+	display: none !important;
+}
+
+.friendsListMessage{
+	margin: 1em 0 1em 0;
+	box-sizing: border-box;
+}
+
+.borderUnder{
+	border-bottom: 1px solid teal;
+}
+
+.friendsUsername{
+	text-align: center !important;
 }
 
 @media(max-width: 600px){

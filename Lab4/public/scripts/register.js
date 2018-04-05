@@ -11,7 +11,7 @@
 
 	//Sets the username inputfield to contain the randomly created username as a suggestion
 	$('#username').val($randomUsername);
-
+}());
 //click listener on the sign up button
 $('#sign_up').click(function() {
 
@@ -20,25 +20,25 @@ $('#sign_up').click(function() {
 
 	//stores user to database if username is not allready taken
 	firebase.database().ref().child('users').once('value', function(snapshot) {
-		if (!snapshot.hasChild($username)) {
-			console.log('User created!');
+		if (!snapshot.hasChild($username || $user_id)) {
 			
+			
+			//updates user
+			firebase.auth().currentUser.updateProfile({displayName: $username});
+			console.log(firebase.auth().currentUser.displayName);
 			//puts the new user into the database
 			firebase.database().ref().child('users').child($username).set({
 				user_id: $user_id,
-				username: $username
+				username: $username,
 			});
 
-			//takes you to the chat view
-			document.location.href = "chat.html";
-		}
-		else {
+		} else {
 			alert("That user already exists");
 			console.log('User with username: ' + $username + " already exists!")
 		}
 	});
 
-	//checks if the function get get username works if it does you have succesfully logged in B-)
+	//checks if the function get get username works if it does you have succesfully logged in
 	if (firebase.auth().currentUser.displayName) {
 		document.location.href = "chat.html";
 	}
@@ -54,4 +54,3 @@ firebase.auth().onAuthStateChanged(function(loggedInUser) {
 	}
 });
 
-}());

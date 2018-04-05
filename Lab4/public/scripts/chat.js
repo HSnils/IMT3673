@@ -6,7 +6,6 @@ function scrolltobottom(){
 		"easeOutQuint"
 	);
 }
-
 // adds message to the chatMessages div
 function addMessage(msg) {
 	//gets username
@@ -49,11 +48,12 @@ function addMessage(msg) {
 				message: $message
 			});
 
-			console.log('message sent');
-			/*//Pushes users data to database
-				firebase.database().ref().child('users').child(username).child('messages').push({
-				message: message
-			});*/
+			console.log($username +"'s message was sent");
+
+			//pushes message to the user aswell to get from friends.html
+			firebase.database().ref().child('users').child($username).child('messages').push({
+				message: $message
+			});
 
 			//Clears the input field after posting
 			$('#messageInput').val('');
