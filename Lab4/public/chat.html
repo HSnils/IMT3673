@@ -35,7 +35,7 @@
 	<!---->
 	
 	<!--Fonts-->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
@@ -61,6 +61,11 @@
 
 	<!-- div to fill with messages -->
 	<div id="chatMessages">
+		<div class="valign-wrapper loadingBoxHeight" id="loadingMessages">
+			<div class="progress" >
+				<div class="indeterminate"></div>
+			</div>
+		</div>
 	</div>
 
 	<!--filler-->
@@ -72,11 +77,11 @@
 	<div class="row msgField no-margin-bottom">
 		<div class="col s12 m12">
 			<div class="row no-margin-bottom">
-				<div class="input-field col s9 m11 " id="messageInputDiv">
+				<div class="input-field col s9 m11" id="messageInputDiv">
 					<textarea id="messageInput" class="materialize-textarea white-text" data-length="256" maxlength="256"></textarea>
 					<label for="messageInput">Write message here...</label>
 				</div>
-				<div class="col s3 m1 valign-wrapper ">
+				<div class="col s3 m1 valign-wrapper sendMsgBox">
 					<button class="btn waves-effect waves-light center-align" type="submit" name="action" style="float:right;" id="sendMsg">
 						Send
 						<i class="material-icons right">send</i>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 4 - Chat application</title>
+
+	<!--  update the version number as needed 
+	<script defer src="/__/firebase/4.12.1/firebase-app.js"></script>
+	 include only the Firebase features as you need 
+	<script defer src="/__/firebase/4.12.1/firebase-auth.js"></script>
+	<script defer src="/__/firebase/4.12.1/firebase-database.js"></script>
+	<script defer src="/__/firebase/4.12.1/firebase-messaging.js"></script>
+	<script defer src="/__/firebase/4.12.1/firebase-storage.js"></script>
+	< initialize the SDK after all desired features are loaded 
+	<script defer src="/__/firebase/init.js"></script> -->
+
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--Jquery and UI-->
+	<script src="jquery-ui/external/jquery/jquery.js"></script>
+	<link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="jquery-ui/jquery-ui.theme.min.css">
+	<script src="jquery-ui/jquery-ui.min.js"></script>
+	
+	<!--Materializecss -->
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<!---->
+	
+	<!--Fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+<body>
+	<div class="navbar-fixed">
+		<nav class="nav-extended"> 
+			<div class="nav-wrapper hide-on-small-only">
+				<a href="#" class="brand-logo">Chatchat</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li class="tab "><a href="chat.html">Chat</a></li>
+					<li class="tab active"><a href="friends.html">Friends</a></li>
+				</ul>
+			</div>
+			<div class="nav-content hide-on-med-and-up">
+				<ul class="tabs tabs-transparent">
+					<li class="tab "><a href="chat.html">Chat</a></li>
+					<li class="tab active"><a href="friends.html">Friends</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<!--box for all friends -->
+	<div id="friendsBox"></div>
+
+	<!--scripts-->
+	<script>
+	
+	</script>
+	<script type="text/javascript" src="scripts/moment.js"></script>
+	<script type="text/javascript" src="scripts/initialize.js"></script>
+	<script type="text/javascript" src="scripts/friends.js"></script>
+	<script>
+
+		$(document).ready(function() {
+
+			$('textarea#messageInput').characterCounter();
+		});
+
+	</script>
+	</body>
+</html>

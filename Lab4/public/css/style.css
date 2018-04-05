@@ -73,6 +73,17 @@ nav{
 	color: white !important;
 }
 
+.loadingBoxHeight{
+	height: 500px;
+	padding: 0 20em 0 20em;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.sendMsgBox{
+	height: 80px;
+}
+
 @media(max-width: 600px){
 	body{
 
@@ -87,5 +98,20 @@ nav{
 		padding-right:  3em;
 		box-sizing: border-box;
 	}
+
+	.sendMsgBox{
+		width: 20%;
+		box-sizing: border-box;
+	}
+
+	#messageInputDiv {
+		width: 70%;
+		box-sizing: border-box;
+	}
+
+	.loadingBoxHeight{
+	padding: 0 1em 0 1em;
+
+}
 }
 

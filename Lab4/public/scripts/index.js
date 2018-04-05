@@ -1,15 +1,12 @@
 
 (function(){
 
-	//Gets elements
-	$signinButton = $('#sign_in');
-
 	//click event listener
-	$signinButton.click(function(){
+	$('#sign_in');.click(function(){
 		firebase.auth().signInAnonymously();
 	});
 
-	//Sends user to feed if logged inn
+	//Sends user to register if logged inn
 	firebase.auth().onAuthStateChanged(firebaseUser => {
 		if (firebaseUser) {
 			document.location.href = "register.html";

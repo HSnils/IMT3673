@@ -40,29 +40,36 @@ function addMessage(msg) {
 		$username = firebase.auth().currentUser.displayName;
 		$message = $('#messageInput').val();
 
-		//Puts the message into the database
-		firebase.database().ref().child('messages').push({
-			date: $datePosted,	
-			username: $username,
-			message: $message
-		});
+		//checks if message isn't empty
+		if (!$message == ("" || " ")){
+			//Puts the message into the database
+			firebase.database().ref().child('messages').push({
+				date: $datePosted,	
+				username: $username,
+				message: $message
+			});
 
-		console.log('message sent');
-		/*//Pushes users data to database
-			firebase.database().ref().child('users').child(username).child('messages').push({
-			message: message
-		});*/
+			console.log('message sent');
+			/*//Pushes users data to database
+				firebase.database().ref().child('users').child(username).child('messages').push({
+				message: message
+			});*/
 
-		//Clears the input field after posting
-		$('#messageInput').val('');
+			//Clears the input field after posting
+			$('#messageInput').val('');
+		} else {
+			console.log("Messages can not be empty!");
+		}
+		
 	});
 
-	// Runs when user adds to database
-	var startListening = function() {
+	//Runs when user adds to database
+	var checkForNewPosts = function() {
 		//var now = moment();
 		firebase.database().ref().child('messages').on('child_added', function(snapshot) {
-			var msg = snapshot.val();
-			addMessage(msg)
+			$msg = snapshot.val();
+			addMessage($msg)
+			$('#loadingMessages').hide();
 			/*if(msg.date) {
 				var datetime = moment(msg.date);
 				var user = firebase.auth().currentUser;
@@ -87,23 +94,14 @@ function addMessage(msg) {
 
 	};
 
-
-
-	// Begin listening for data and when its done scrolls to the bottom
-	startListening()
-	/*$.when(  ).done(function(){
-		setTimeout(scrolltobottom, 1000);
-	});*/
+	//Begin checking for posts for data
+	checkForNewPosts()
 
 	//Sends user to feed if logged inn
 	firebase.auth().onAuthStateChanged(firebaseUser => {
 		if (!firebaseUser) {
 		document.location.href = "index.html";
 		}
-		else {
-		console.log('logged');
-	}
-
 	});
 
 }());
