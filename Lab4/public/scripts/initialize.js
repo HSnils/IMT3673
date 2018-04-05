@@ -10,6 +10,4 @@
 	};
 
 	firebase.initializeApp(config);
-
-	// Initialize Cloud Firestore through Firebase
 })();

@@ -74,7 +74,7 @@
 			<form action="" class="col s12">
 				<div class="row no-margin-bottom">
 					<div class="input-field col s9 m11">
-						<textarea id="messageInput" class="materialize-textarea white-text" data-length="256"></textarea>
+						<textarea id="messageInput" class="materialize-textarea white-text" data-length="256" maxlength="256"></textarea>
           				<label for="messageInput">Write message here...</label>
 					</div>
 					<div class="col s3 m1 valign-wrapper ">
@@ -89,18 +89,19 @@
 	</div>
 
 	<!--scripts-->
+	<script>
+	
+	</script>
 	<script type="text/javascript" src="scripts/moment.js"></script>
 	<script type="text/javascript" src="scripts/initialize.js"></script>
 	<script type="text/javascript" src="scripts/chat.js"></script>
 	<script>
 
 		$(document).ready(function() {
-			$date = Date.now();
-			$formatedDate = moment($date).toString();
-console.log($formatedDate);
+
 			$('textarea#messageInput').characterCounter();
 		});
-       
+
 	</script>
 	</body>
 </html>
