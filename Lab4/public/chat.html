@@ -58,98 +58,10 @@
 			</div>
 		</nav>
 	</div>
-	<!--anothers msg -->
-	<div class="row">
-		<div class="col s12 m5">
-			<div class="card-panel ">
-				<span class="theMessage">I am a very simple card. I am good at containing small bits of information.
-				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-				</span>
-				<div class="width100 msg_sender_info">
-					<span class="username_in_msg">User1</span>
-					<span class="date_in_msg">4 Mars 2018 10:32</span>
-				</div>
-			</div>
-		</div>
+
+	<!-- div to fill with messages -->
+	<div id="chatMessages">
 	</div>
-
-	<!--my msg -->
-	<div class="row">
-		<div class="col s12 m5 right">
-			<div class="card-panel teal">
-				<span class="theMessage white-text">I am a very simple card. I am good at containing small bits of information.
-				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-				</span>
-				<div class="width100 msg_sender_info">
-					<span class="username_in_msg order2">Me</span>
-					<span class="date_in_msg white-text order1">4 Mars 2018 10:32</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--anothers msg -->
-	<div class="row">
-		<div class="col s12 m5">
-			<div class="card-panel ">
-				<span class="theMessage">I am a very simple card. I am good at containing small bits of information.
-				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-				</span>
-				<div class="width100 msg_sender_info">
-					<span class="username_in_msg">User1</span>
-					<span class="date_in_msg">4 Mars 2018 10:32</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--anothers msg -->
-	<div class="row">
-		<div class="col s12 m5">
-			<div class="card-panel ">
-				<span class="theMessage">I am a very simple card. I am good at containing small bits of information.
-				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-				</span>
-				<div class="width100 msg_sender_info">
-					<span class="username_in_msg">User1</span>
-					<span class="date_in_msg">4 Mars 2018 10:32</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--anothers msg -->
-	<div class="row">
-		<div class="col s12 m5">
-			<div class="card-panel ">
-				<span class="theMessage">I am a very simple card. I am good at containing small bits of information.
-				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-				</span>
-				<div class="width100 msg_sender_info">
-					<span class="username_in_msg">User1</span>
-					<span class="date_in_msg">4 Mars 2018 10:32</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--anothers msg -->
-	<div class="row">
-		<div class="col s12 m5">
-			<div class="card-panel ">
-				<span class="theMessage">I am a very simple card. I am good at containing small bits of information.
-				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-				</span>
-				<div class="width100 msg_sender_info">
-					<span class="username_in_msg">User1</span>
-					<span class="date_in_msg">4 Mars 2018 10:32</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
 
 	<!--filler-->
 	<div class="row fillerHeight">
@@ -166,7 +78,7 @@
           				<label for="messageInput">Write message here...</label>
 					</div>
 					<div class="col s3 m1 valign-wrapper ">
-						<button class="btn waves-effect waves-light center-align" type="submit" name="action" style="float:right;">
+						<button class="btn waves-effect waves-light center-align" type="submit" name="action" style="float:right;" id="sendMsg">
 							Send
 							<i class="material-icons right">send</i>
 						</button>
@@ -176,13 +88,16 @@
 		</div>
 	</div>
 
-
-	
-	 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-
+	<!--scripts-->
+	<script type="text/javascript" src="scripts/moment.js"></script>
+	<script type="text/javascript" src="scripts/initialize.js"></script>
+	<script type="text/javascript" src="scripts/chat.js"></script>
 	<script>
 
 		$(document).ready(function() {
+			$date = Date.now();
+			$formatedDate = moment($date).toString();
+console.log($formatedDate);
 			$('textarea#messageInput').characterCounter();
 		});
        

@@ -12,27 +12,23 @@
 	//Sets the username inputfield to contain the randomly created username as a suggestion
 	$('#username').val($randomUsername);
 
-	//Gets elements
-	$signUpButton = $('#sign_up');
-	$users = firebase.database().ref().child('users');
-
 //click listener
-$signUpButton.click(function() {
+$('#sign_up').click(function() {
 
 	$user_id = firebase.auth().currentUser.uid;
 	$username = $('#username').val();
 
 	//stores user to database if nickname is not taken
-	$users.once('value', function(snapshot) {
+	firebase.database().ref().child('users').once('value', function(snapshot) {
 		if (!snapshot.hasChild($username || $user_id)) {
 			console.log('User created!');
 			//updates user
-			firebase.auth().currentUser.updateProfile({username: $username});
+			firebase.auth().currentUser.updateProfile({displayName: $username});
 			
 			//puts the new user into the database
 			firebase.database().ref().child('users').child($username).set({
 	           user_id: $user_id,
-	           username: $username,
+	           username: $username
 	         });
 
 		}
@@ -43,18 +39,18 @@ $signUpButton.click(function() {
 	});
 
 	//When user has updated displayName send to feed
-	if (firebase.auth().currentUser.username) {
-		document.location.href = "../chat.html";
+	if (firebase.auth().currentUser.displayName) {
+		document.location.href = "chat.html";
 	}
 });
 
 //Sends user to feed if logged inn
 firebase.auth().onAuthStateChanged(function(loggedInUser) {
 	if (!loggedInUser) {
-		document.location.href = "../index.html";
+		document.location.href = "index.html";
 
-	} else if(firebase.auth().currentUser.username) {
-		document.location.href = "../chat.html";
+	} else if(firebase.auth().currentUser.displayName) {
+		document.location.href = "chat.html";
 	}
 });
 

@@ -56,7 +56,15 @@ body {
 }
 
 .fillerHeight{
-	height: 3em;
+	height: 7em;
+}
+
+nav{
+	background-color: #fdcb6e !important;
+}
+
+.no-margin-bottom{
+	margin-bottom: 0 !important;
 }
 
 @media(max-width: 600px){
@@ -65,6 +73,3 @@ body {
 	}
 }
 
-.no-margin-bottom{
-	margin-bottom: 0 !important;
-}
