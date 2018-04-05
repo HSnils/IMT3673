@@ -84,6 +84,13 @@ nav{
 	height: 80px;
 }
 
+/* FRIENDS . html*/
+.usersMessages{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
 @media(max-width: 600px){
 	body{
 

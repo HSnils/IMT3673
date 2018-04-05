@@ -66,7 +66,7 @@ function addMessage(msg) {
 	//Runs when user adds to database
 	var checkForNewPosts = function() {
 		//var now = moment();
-		firebase.database().ref().child('messages').on('child_added', function(snapshot) {
+		firebase.database().ref().child('messages').limitToFirst(20).on('child_added', function(snapshot) {
 			$msg = snapshot.val();
 			addMessage($msg)
 			$('#loadingMessages').hide();

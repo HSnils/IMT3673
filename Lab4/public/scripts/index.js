@@ -2,7 +2,7 @@
 (function(){
 
 	//click event listener
-	$('#sign_in');.click(function(){
+	$('#sign_in').click(function(){
 		firebase.auth().signInAnonymously();
 	});
 
