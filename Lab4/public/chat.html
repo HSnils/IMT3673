@@ -71,20 +71,18 @@
 	<!--MESSAGE FIELD-->
 	<div class="row msgField no-margin-bottom">
 		<div class="col s12 m12">
-			<form action="" class="col s12">
-				<div class="row no-margin-bottom">
-					<div class="input-field col s9 m11">
-						<textarea id="messageInput" class="materialize-textarea white-text" data-length="256" maxlength="256"></textarea>
-          				<label for="messageInput">Write message here...</label>
-					</div>
-					<div class="col s3 m1 valign-wrapper ">
-						<button class="btn waves-effect waves-light center-align" type="submit" name="action" style="float:right;" id="sendMsg">
-							Send
-							<i class="material-icons right">send</i>
-						</button>
-					</div>
+			<div class="row no-margin-bottom">
+				<div class="input-field col s9 m11 " id="messageInputDiv">
+					<textarea id="messageInput" class="materialize-textarea white-text" data-length="256" maxlength="256"></textarea>
+					<label for="messageInput">Write message here...</label>
 				</div>
-			</form>
+				<div class="col s3 m1 valign-wrapper ">
+					<button class="btn waves-effect waves-light center-align" type="submit" name="action" style="float:right;" id="sendMsg">
+						Send
+						<i class="material-icons right">send</i>
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 

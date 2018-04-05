@@ -1,3 +1,12 @@
+//function to jump to the bottom
+function scrolltobottom(){
+	$('html, body').animate({
+		scrollTop: $(document).height()-$(window).height()},
+		0,
+		"easeOutQuint"
+	);
+}
+
 // adds message to the chatMessages div
 function addMessage(msg) {
 	//gets username
@@ -8,15 +17,16 @@ function addMessage(msg) {
 	//if the message is send by the logged in user display as his message else display as anothers message
 	if(msg.username == $loggedInUser){
 		$newMessage = $([
-			'<div class="row"><div class="col s12 m5 right"><div class="card-panel light-blue"><span class="theMessage white-text">'+msg.message+'</span><div class="width100 msg_sender_info"><span class="username_in_msg order2"><b>'+msg.username+'</b></span><span class="date_in_msg order1 white-text">'+$msgDate+'</span></div></div></div></div>'
+			'<div class="row my_msg"><div class="col s12 m5 right"><div class="card-panel light-blue"><span class="theMessage white-text">'+msg.message+'</span><div class="width100 msg_sender_info"><span class="username_in_msg my_msg order2"><b>'+msg.username+'</b></span><span class="date_in_msg order1 white-text">'+$msgDate+'</span></div></div></div></div>'
 		].join());
 	}else{
 		$newMessage = $([
-			'<div class="row"><div class="col s12 m5"><div class="card-panel "><span class="theMessage">'+msg.message+'</span><div class="width100 msg_sender_info"><span class="username_in_msg"><b>'+msg.username+'</b></span><span class="date_in_msg">'+$msgDate+'</span></div></div></div></div>'
+			'<div class="row not_my_msg"><div class="col s12 m5"><div class="card-panel "><span class="theMessage">'+msg.message+'</span><div class="width100 msg_sender_info"><span class="username_in_msg"><b>'+msg.username+'</b></span><span class="date_in_msg">'+$msgDate+'</span></div></div></div></div>'
 		].join());
 	}
 
 	$('#chatMessages').append($newMessage);
+	scrolltobottom();
 
 }
 
@@ -77,19 +87,13 @@ function addMessage(msg) {
 
 	};
 
-	//function to jump to the bottom
-	function scrolltobottom(){
-		$('html, body').animate({
-			scrollTop: $(document).height()-$(window).height()},
-			0,
-			"easeOutQuint"
-		);
-	}
+
 
 	// Begin listening for data and when its done scrolls to the bottom
-	$.when( startListening() ).done(function(){
+	startListening()
+	/*$.when(  ).done(function(){
 		setTimeout(scrolltobottom, 1000);
-	});
+	});*/
 
 	//Sends user to feed if logged inn
 	firebase.auth().onAuthStateChanged(firebaseUser => {

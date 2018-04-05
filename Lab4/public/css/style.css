@@ -11,6 +11,23 @@ body {
 	width: 100%;
 }
 
+nav{
+	background-color: #fdcb6e !important;
+}
+
+.brand-logo{
+	margin-left: 0.5em;
+}
+
+.fillerHeight{
+	height: 7em;
+}
+
+.no-margin-bottom{
+	margin-bottom: 0 !important;
+}
+
+/* Message stuff */
 .theMessage{
 	display: block;
 }
@@ -22,16 +39,12 @@ body {
 }
 
 .username_in_msg{
+	text-shadow: 0.5px 0.5px 2px rgba(0,0,0,0.2);
 	color: coral;
-
-}
-
-.brand-logo{
-	margin-left: 0.5em;
 }
 
 .username_in_msg.my_msg{
-	color: white;
+	color: #66FF66 !important;
 }
 
 .date_in_msg{
@@ -45,6 +58,7 @@ body {
 .order2{
 	order: 2;
 }
+
 .msgField{
 	position: fixed;
 	bottom: 0;
@@ -55,21 +69,23 @@ body {
 	box-sizing: border-box;
 }
 
-.fillerHeight{
-	height: 7em;
-}
-
-nav{
-	background-color: #fdcb6e !important;
-}
-
-.no-margin-bottom{
-	margin-bottom: 0 !important;
+#messageInputDiv .character-counter{
+	color: white !important;
 }
 
 @media(max-width: 600px){
 	body{
 
+	}
+
+	.row.my_msg{
+		padding-left:  3em;
+		box-sizing: border-box;
+	}
+
+	.row.not_my_msg{
+		padding-right:  3em;
+		box-sizing: border-box;
 	}
 }
 
